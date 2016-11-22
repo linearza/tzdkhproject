@@ -1,0 +1,19 @@
+.block{
+  overflow: auto;
+  padding: 20px 0;
+  &:nth-child(5){
+    background: $purple;
+  }
+  &:nth-child(4){
+    background: $purple-light;
+  }
+  &:nth-child(3){
+    background: $red;
+  }
+  &:nth-child(2){
+    background: $orange;
+  }
+  &:nth-child(1){
+    background: $yellow;
+  }
+}

@@ -1,13 +1,20 @@
+$bungee: 'Bungee Inline', cursive;
+$openSans: 'Open Sans', sans-serif;
+
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  background: #fff;
-  color: #444;
+  font: 300 13px/1.6 $openSans;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  text-align: center;
 }
