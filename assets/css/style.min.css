@@ -1,0 +1,213 @@
+.clear:before, .clear:after {
+  content: ' ';
+  display: table;
+}
+
+.clear {
+  *zoom: 1;
+}
+.clear:after {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font: 300 13px/1.6 "Open Sans", sans-serif;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+.block {
+  overflow: auto;
+  padding: 20px 0;
+}
+.block:nth-child(5) {
+  background: #811d5e;
+}
+.block:nth-child(4) {
+  background: #983275;
+}
+.block:nth-child(3) {
+  background: #fd2f24;
+}
+.block:nth-child(2) {
+  background: #ff6f01;
+}
+.block:nth-child(1) {
+  background: #fed800;
+}
+
+@-webkit-keyframes colourPulse {
+  0% {
+    color: #983275;
+  }
+  33% {
+    color: #ff6f01;
+  }
+  66% {
+    color: #fd2f24;
+  }
+  100% {
+    color: #983275;
+  }
+}
+
+@keyframes colourPulse {
+  0% {
+    color: #983275;
+  }
+  33% {
+    color: #ff6f01;
+  }
+  66% {
+    color: #fd2f24;
+  }
+  100% {
+    color: #983275;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes lovePulse {
+  0% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+    fill: #fff;
+  }
+  100% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+    fill: #fd2f24;
+  }
+}
+@keyframes lovePulse {
+  0% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+    fill: #fff;
+  }
+  100% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+    fill: #fd2f24;
+  }
+}
+h1 {
+  font-size: 60px;
+  font-family: "Bungee Inline", cursive;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  -webkit-animation: colourPulse 30000ms linear both infinite;
+          animation: colourPulse 30000ms linear both infinite;
+}
+
+h2 {
+  margin: 0;
+}
+
+p svg {
+  vertical-align: bottom;
+  fill: #fff;
+  margin: 0 3px;
+  -webkit-animation: pulse 1000ms linear both alternate infinite;
+          animation: pulse 1000ms linear both alternate infinite;
+}
+p svg:nth-child(2) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+form {
+  max-width: 320px;
+  margin: 0 auto;
+}
+form input {
+  display: block;
+  line-height: 25px;
+  font-size: 15px;
+  margin: 20px auto;
+  padding: 5px 15px;
+  border: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  outline-color: #983275;
+  border-radius: 3px;
+}
+form input[type="submit"] {
+  background: #fed800;
+  color: #983275;
+  font-family: "Bungee Inline", cursive;
+  cursor: pointer;
+}
+form input[type="submit"]:active {
+  background: #cbad00;
+}
+
+.wrap {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gift {
+  position: absolute;
+  top: 30px;
+  fill: #fff;
+}
+
+.made-with-love {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+.made-with-love svg {
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-left: 6px;
+  -webkit-animation: lovePulse 2000ms linear both alternate infinite;
+          animation: lovePulse 2000ms linear both alternate infinite;
+}
+
+@font-face {
+  font-family: 'Font-Name';
+  src: url("../fonts/font-name.eot");
+  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
