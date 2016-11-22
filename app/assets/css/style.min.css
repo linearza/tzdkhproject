@@ -177,6 +177,9 @@ form input[type="submit"] {
 form input[type="submit"]:active {
   background: #cbad00;
 }
+form input.is-hidden {
+  display: none;
+}
 
 .wrap {
   max-width: 768px;

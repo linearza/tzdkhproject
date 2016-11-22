@@ -86,6 +86,9 @@ form{
         background: darken($yellow, 10%);
       }
     }
+    &.is-hidden{
+      display: none;
+    }
   }
 }
 
