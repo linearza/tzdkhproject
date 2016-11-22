@@ -52,11 +52,14 @@
 
     <div class="block">
       <div class="wrap">
-        <form action="https://formspree.io/vanwijk.mc@gmail.com"
-              method="POST">
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="_replyto" placeholder="Email">
-            <input type="submit" value="Enter!">
+        <form id="entry-form" action="//formspree.io/vanwijk.mc@gmail.com" method="post">
+          <input type="text" name="_replyto" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your email" required>
+          <!-- CONFIG -->
+          <input class="is-hidden" type="text" name="_gotcha">
+          <input type="hidden" name="_subject" value="Subject">
+          <!-- /CONFIG -->
+          <input class="submit" type="submit" value="Enter">
         </form>
 
          <span class="made-with-love">
