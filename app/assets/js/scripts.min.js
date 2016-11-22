@@ -16,23 +16,21 @@
         dataType: 'json',
         beforeSend: function() {
           $submitButton.prop('disabled', true);
-          $submitButton.before('<div class="alert sending">Sending message…</div>');
+          $submitButton.before('<div class="alert sending">Submitting...</div>');
+          $contactForm.find('input.once').remove();
         },
         success: function() {
           $contactForm.find('.alert.sending').remove();
-          $submitButton.before('<div class="alert sent">Message sent!</div>');
+          $submitButton.before('<div class="alert sent">You have been entered!</div>');
           $submitButton.prop('disabled', false);
           setTimeout(function() {
-            $contactForm.find('.alert.sent').remove();
+            // $contactForm.find('.alert.sent').remove();
           }, 5000);
         },
         error: function() {
           $contactForm.find('.alert.sending').remove();
-          $submitButton.before('<div class="alert error">Oops, there was an error. Please contact me directly at daniella@mylittleswimschool.co.za</div>');
+          $submitButton.before('<div class="alert error">Oops, there was an error. Please try again, a bit later.</div>');
           $submitButton.prop('disabled', false);
-          setTimeout(function() {
-            $contactForm.find('.alert.error').remove();
-          }, 10000);
         }
       });
     });
