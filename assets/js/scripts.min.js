@@ -12,7 +12,7 @@
       $.ajax({
         url: '//formspree.io/vanwijk.mc@gmail.com',
         method: 'POST',
-        data: $(this).serialize(),
+        data: $contactForm.serialize(),
         dataType: 'json',
         beforeSend: function() {
           $submitButton.prop('disabled', true);
