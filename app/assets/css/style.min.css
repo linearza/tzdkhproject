@@ -106,24 +106,24 @@ body {
   0% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
             transform: scale3d(0.9, 0.9, 0.9);
-    fill: #fff;
+    fill: #fe8f89;
   }
   100% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
             transform: scale3d(1.1, 1.1, 1.1);
-    fill: #fd2f24;
+    fill: #fd5f57;
   }
 }
 @keyframes lovePulse {
   0% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9);
             transform: scale3d(0.9, 0.9, 0.9);
-    fill: #fff;
+    fill: #fe8f89;
   }
   100% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
             transform: scale3d(1.1, 1.1, 1.1);
-    fill: #fd2f24;
+    fill: #fd5f57;
   }
 }
 h1 {
@@ -198,11 +198,12 @@ form input.is-hidden {
   margin-top: 50px;
   text-align: center;
   width: 100%;
+  font-size: 10px;
 }
 .made-with-love svg {
   vertical-align: middle;
   margin-top: -3px;
-  margin-left: 6px;
+  margin-left: 3px;
   -webkit-animation: lovePulse 2000ms linear both alternate infinite;
           animation: lovePulse 2000ms linear both alternate infinite;
 }
