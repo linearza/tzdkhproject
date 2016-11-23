@@ -204,6 +204,7 @@ form input.is-hidden {
   vertical-align: middle;
   margin-top: -3px;
   margin-left: 3px;
+  width: 15px;
   -webkit-animation: lovePulse 2000ms linear both alternate infinite;
           animation: lovePulse 2000ms linear both alternate infinite;
 }
